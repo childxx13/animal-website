@@ -1,0 +1,136 @@
+/* Основные стили */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #cab49b;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 600px;
+    margin: 10px;
+}
+
+.nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #fa7e0a;
+}
+
+/* Стрелка для возврата на главную страницу */
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.back-arrow:hover {
+    color: #fa7e0a;
+}
+
+/* Стили для изображений и текста под ними на главной странице */
+.animal-images {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.animal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.animal img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animal img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для изображений на страницах с животными */
+.animal-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.animated-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.animated-image:hover {
+    transform: scale(1.1);
+}.animal-container {
+    display: flex; /* Установим flex для расположения изображений в одну линию */
+    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку, если не хватает места */
+    justify-content: center; /* Центрируем содержимое контейнера */
+    gap: 20px; /* Устанавливаем расстояние между элементами */
+    margin-top: 20px;
+}
+
+.animal {
+    text-align: center;
+    width: 200px; /* Задаем фиксированную ширину для каждого элемента */
+}
+.centered-button {
+    display: block;            /* Размещаем кнопку как блочный элемент */
+    margin: 30px auto 0;       /* Отступ сверху и выравнивание по центру */
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.centered-button:hover {
+    background-color: #333;
+    color: white;
+}
